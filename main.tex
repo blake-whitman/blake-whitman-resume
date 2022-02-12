@@ -1,0 +1,206 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------Additional fonts if desired----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME CONTENT STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Blake Whitman} \\ \vspace{3pt}
+    \small 419-283-8193 \hspace{.01cm} $|$ \hspace{.01cm} \href{mailto:whitman.124@osu.edu}{\underline{whitman.124@osu.edu}} \hspace{.01cm} $|$ \hspace{.01cm} 
+    \href{https://www.linkedin.com/in/blake-whitman-85301b1a4/}{\underline{LinkedIn}} \hspace{.01cm} $|$ \hspace{.01cm}
+    \href{https://github.com/blake-whitman}{\underline{GitHub}}
+    \hspace{.01cm} $|$ \hspace{.01cm}
+    \href{https://blake-whitman.github.io}{\underline{Personal Portfolio}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {The Ohio State University}{Columbus, OH}
+      {B.S. in Computer Science, B.A. in Mathematics}{Aug. 2019 -- May 2023}
+       \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{GPA}{: 3.91/4.0} \\
+     \textbf{Coursework}{: Data Structures, Algorithms, Operating Systems, Networking, Machine Learning, Web Applications, Probability Theory, Linear Algebra, Differential Equations, Abstract Algebra, Real Analysis} \\
+    }}
+ \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Incoming Software Engineer Intern}{Summer 2022}
+      {JPMorgan Chase \& Co.}{Columbus, OH}
+      \resumeItemListStart
+        %\resumeItem{}
+        \resumeItemListEnd
+        \vspace{.1cm}
+    \resumeSubheading
+      {Software Engineer Intern}{June 2021 -- Aug. 2021}
+      {Fiserv}{Brookfield, WI}
+      \resumeItemListStart
+        \resumeItem{Bootstrapped a service to audit 2,400 internal Fiserv applications, verify their SSO/MFA compliance, and ensure proper authentication security coverage}
+        \resumeItem{Implemented multi-threaded crawler using Python that pinged 90,000 DNS records to identify a subset of valid web URLs; multi-threading reduced runtime by 87.5\%}
+        \resumeItem{Devised and initialized a SQLite database schema that stored script results and automatically exported into a CSV with readable layout; used by 15,000 stakeholders}
+        \resumeItemListEnd
+
+    \resumeSubheading
+      {Optimization Research Assistant}{Jan. 2021 -- July 2021}
+      {The Ohio State University}{}
+      \resumeItemListStart
+        \resumeItem{Introduced linear optimization problems over polar convex sets by incorporating the graphical method for linear programming}
+        \resumeItem{Incorporated Python simulations using the Chart.js library to illustrate research methodology}
+      \resumeItemListEnd
+      
+      \resumeSubheading
+      {Queuing Theory Research Assistant (REU)}{May 2020 -- Aug. 2020}
+      {The Ohio State University}{}
+      \resumeItemListStart
+        \resumeItem{Developed a simulation in Java that modeled interactions between public transit in downtown Columbus, Ohio (COTA bus system)}
+        \resumeItem{Created a GUI to display the flow of queues throughout the process, average passenger wait times and bus delay, and predicted bus arrival with 97\% accuracy}
+        \resumeItem{Built an Android application to collect data from public transportation users and upload it to AWS}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Veeva Systems Dashboard}}{}
+          \resumeItemListStart
+            \resumeItem{Implemented interactive graphs that displayed a doctor's prescription statistics, equipped with prediction forecasting measured to be 96.5\% accurate}
+            \resumeItem{Ranked doctors using multiple linear regression based on productivity, prescription total, and monthly trajectory to isolate future top candidates}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Class View}}{}
+          \resumeItemListStart
+            \resumeItem{Devised an online classroom discussion platform, similar to Piazza or Canvas}
+            \resumeItem{Built and tested a custom API for use in conjunction with the PostgreSQL database and Angular frontend}
+            \resumeItem{Implemented JWT authentication in Spring Boot to authenticate users and secure user sessions}
+          \resumeItemListEnd
+          \resumeProjectHeading
+          {\textbf{Mode of Transportation Forecasting}}{}
+          \resumeItemListStart
+            \resumeItem{Trained a machine learning model using pre-trained models (Google) to predict a user's mode of transportation}
+            \resumeItem{Achieved around 85\% accuracy using sklearn random forest models}
+            \resumeItem{Deployed production application to Heroku using Docker}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C++, Perl, R, MATLAB, JavaScript, HTML, Ruby} \\
+     \textbf{Frameworks}{: Angular, Spring Boot, Bootstrap, Flex Layout, Xamarin} \\
+     \textbf{Tools}{: Git, Docker, AWS, Jama, Jira, PostgreSQL, REST, Terraform, Node.js, Linux}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
